@@ -1,0 +1,20 @@
+{
+  "name": "lab11-gateway",
+  "version": "1.1.0",
+  "description": "API Gateway (rate limiting + routing + dokumentasi OpenAPI gabungan) untuk Lab 11",
+  "main": "gateway.js",
+  "scripts": {
+    "start": "node gateway.js",
+    "test:rate-limit": "node test-rate-limit.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "http-proxy-middleware": "^3.0.3",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
